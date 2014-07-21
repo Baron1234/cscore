@@ -559,7 +559,8 @@ namespace CSCore.SoundOut
 
         private void CheckForIsInitialized()
         {
-            
+            if(_isInitialized)
+                throw new InvalidOperationException("DirectSoundOut is not initialized.");
         }
 
         /// <summary>
