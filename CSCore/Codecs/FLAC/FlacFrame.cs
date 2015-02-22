@@ -264,6 +264,10 @@ namespace CSCore.Codecs.FLAC
         }
 
         private bool _disposed;
+
+        /// <summary>
+        /// Disposes the <see cref="FlacFrame"/> and releases all associated resources.
+        /// </summary>
         public void Dispose()
         {
             if (!_disposed)
@@ -274,6 +278,9 @@ namespace CSCore.Codecs.FLAC
             }
         }
 
+        /// <summary>
+        /// Finalizes an instance of the <see cref="FlacFrame"/> class.
+        /// </summary>
         ~FlacFrame()
         {
             Dispose();

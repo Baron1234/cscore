@@ -68,13 +68,13 @@ namespace CSCore.Codecs.FLAC
 
         private List<FlacFrameInformation> RunScan(FlacMetadataStreamInfo streamInfo)
         {
-#if DEBUG
+#if FLAC_DEBUG
             Stopwatch watch = new Stopwatch();
             watch.Start();
 #endif
             var result = ScanThisShit(streamInfo);
 
-#if DEBUG
+#if FLAC_DEBUG
             watch.Stop();
             Debug.WriteLine(String.Format("FlacPreScan finished: {0} Bytes processed in {1} ms.",
                 _stream.Length, watch.ElapsedMilliseconds));

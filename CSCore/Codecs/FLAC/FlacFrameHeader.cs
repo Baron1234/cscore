@@ -196,7 +196,7 @@ namespace CSCore.Codecs.FLAC
             int val;
             if (headerBuffer[0] == 0xFF && headerBuffer[1] >> 1 == 0x7C) //sync bits
             {
-                if ((headerBuffer[1] & 0x02) != 0) // ...10 2. letzes bits muss 0 sein
+                if ((headerBuffer[1] & 0x02) != 0)
                 {
                     Error("Invalid FlacFrame. Reservedbit_0 is 1", loggerLocation);
                     return false;
