@@ -4,7 +4,6 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CSCore.SoundOut;
 using System.Threading;
 using System.Diagnostics;
-using CSCore;
 using CSCore.Streams;
 
 namespace CSCore.Test.SoundOut
@@ -128,9 +127,6 @@ namespace CSCore.Test.SoundOut
                 Assert.AreEqual(PlaybackState.Stopped, _soundOut.PlaybackState);
                 _soundOut.Stop();
             }
-
-            if (flag)
-                throw new ObjectDisposedException(String.Empty);
         }
 
         [TestMethod]

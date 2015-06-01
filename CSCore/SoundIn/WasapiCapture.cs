@@ -1,5 +1,4 @@
-﻿using System.Text.RegularExpressions;
-using CSCore.CoreAudioAPI;
+﻿using CSCore.CoreAudioAPI;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;

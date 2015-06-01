@@ -111,8 +111,6 @@ namespace CSCore.Win32
         {
             return new NativeBool(value);
         }
-#pragma warning restore 1591
-
 
         /// <summary>
         /// Converts the value of this instance to its equivalent string representation (either "True" or "False").

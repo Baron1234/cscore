@@ -9,14 +9,12 @@ namespace CSCore.XAudio2
     public unsafe struct DeviceDetails
     {
         // ReSharper disable FieldCanBeMadeReadOnly.Local
-
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 256)]
         private short[] _internalDeviceIdField;
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 256)]
         private short[] _internalDisplayNameField;
         private XAudio2DeviceRole _role;
         private WaveFormatExtensible _outputFormat;
-
         // ReSharper restore FieldCanBeMadeReadOnly.Local
 
         /// <summary>

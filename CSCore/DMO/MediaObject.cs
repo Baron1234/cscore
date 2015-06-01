@@ -956,34 +956,5 @@ namespace CSCore.DMO
                 }
             }
         }
-
-        //---
-
-        /// <summary>
-        ///     acquires or releases a lock on the DMO. Call this method to keep the DMO serialized when performing multiple
-        ///     operations.
-        /// </summary>
-        /// <param name="bLock">
-        ///     Value that specifies whether to acquire or release the lock. If the value is non-zero, a lock is
-        ///     acquired. If the value is zero, the lock is released.
-        /// </param>
-        /// <returns>HRESULT</returns>
-        public unsafe int LockNative(long bLock)
-        {
-            return InteropCalls.CalliMethodPtr(UnsafeBasePtr, bLock, ((void**) (*(void**) UnsafeBasePtr))[23]);
-        }
-
-        /// <summary>
-        ///     acquires or releases a lock on the DMO. Call this method to keep the DMO serialized when performing multiple
-        ///     operations.
-        /// </summary>
-        /// <param name="bLock">
-        ///     Value that specifies whether to acquire or release the lock. If the value is non-zero, a lock is
-        ///     acquired. If the value is zero, the lock is released.
-        /// </param>
-        public void Lock(long bLock)
-        {
-            DmoException.Try(LockNative(bLock), n, "Lock");
-        }
     }
 }

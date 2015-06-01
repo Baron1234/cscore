@@ -6,7 +6,6 @@ using System;
 
 namespace CSCore.CoreAudioAPI
 {
-    [CLSCompliant(false)]
     [RemoveObj]
     internal static class InteropCalls
     {

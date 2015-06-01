@@ -306,10 +306,6 @@
     <Compile Include="MediaFoundation\MFSourceReaderFlags.cs" />
     <Compile Include="MediaFoundation\MFTCategories.cs" />
     <Compile Include="MediaFoundation\MFTEnumFlags.cs" />
-    <Compile Include="MediaFoundation\MFTOutputDataBuffer.cs" />
-    <Compile Include="MediaFoundation\MFTProcessOutputStatus.cs" />
-    <Compile Include="MediaFoundation\MFTransformSetTypeFlags.cs" />
-    <Compile Include="MediaFoundation\MFTransformStatusFlags.cs" />
     <Compile Include="MediaFoundation\MFTRegisterTypeInfo.cs" />
     <Compile Include="MediaFoundation\SourceReaderControlFlags.cs" />
     <Compile Include="MediaFoundation\TranscodeContainerTypes.cs" />

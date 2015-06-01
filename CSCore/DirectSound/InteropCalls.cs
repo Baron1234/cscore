@@ -2,11 +2,8 @@
 using CSCore.Utils;
 #pragma warning disable 1591
 
-
-
 namespace CSCore.DirectSound
 {
-    [CLSCompliant(false)]
     [RemoveObj]
     internal unsafe class InteropCalls
     {

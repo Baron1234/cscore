@@ -70,7 +70,7 @@ namespace CSCore.Utils
         /// <returns>The absolute value of the <paramref name="complex" />.</returns>
         public static implicit operator double(Complex complex)
         {
-            get { return Math.Sqrt(Real * Real + Imaginary * Imaginary); }
+            return complex.Value;
         }
 
         /// <summary>

@@ -36,8 +36,6 @@ namespace CSCore.Codecs
 
             fileExtensions = fileExtensions.Where(x => x != null).Select(x => x.Replace(".", String.Empty)).ToArray();
 
-            fileextensions = fileextensions.Where(x => x != null).Select(x => x.Replace(".", String.Empty)).ToArray();
-
             GetCodecAction = getCodecAction;
             FileExtensions = new ReadOnlyCollection<string>(fileExtensions);
         }
