@@ -284,7 +284,10 @@
     <Compile Include="DSP\FftSize.cs" />
     <Compile Include="FluentExtensions.cs" />
     <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="IAggregator.cs" />
     <Compile Include="IReadableAudioSource.cs" />
+    <Compile Include="ISampleAggregator.cs" />
+    <Compile Include="IWaveAggregator.cs" />
     <Compile Include="IWriteable.cs" />
     <Compile Include="MediaFoundation\CommonAudioDecoderGuids.cs" />
     <Compile Include="MediaFoundation\IMFCollection.cs" />
