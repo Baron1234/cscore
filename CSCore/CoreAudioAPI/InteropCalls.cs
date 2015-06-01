@@ -11,7 +11,8 @@ namespace CSCore.CoreAudioAPI
     internal static class InteropCalls
     {
         [CSCalli]
-        internal static unsafe int CallI(void* _basePtr1, DataFlow dataFlow, DeviceState stateMask, IntPtr* intPtr, void* _basePtr2)
+        internal static unsafe int CallI(void* _basePtr1, DataFlow dataFlow, DeviceState stateMask, IntPtr* intPtr,
+            void* _basePtr2)
         {
             throw new NotImplementedException();
         }
@@ -77,13 +78,16 @@ namespace CSCore.CoreAudioAPI
         }
 
         [CSCalli]
-        internal static unsafe int CallI(void* _basePtr, AudioClientShareMode shareMode, AudioClientStreamFlags streamFlags, long hnsBufferDuration, long hnsPeriodicity, void* p1, Guid audioSessionGuid, void* p2)
+        internal static unsafe int CallI(void* _basePtr, AudioClientShareMode shareMode,
+            AudioClientStreamFlags streamFlags, long hnsBufferDuration, long hnsPeriodicity, void* p1,
+            Guid audioSessionGuid, void* p2)
         {
             throw new NotImplementedException();
         }
 
         [CSCalli]
-        internal static unsafe int CallI(void* _basePtr, Guid iid, uint context, IntPtr activationParams, void* ppinterface, void* p)
+        internal static unsafe int CallI(void* _basePtr, Guid iid, uint context, IntPtr activationParams,
+            void* ppinterface, void* p)
         {
             throw new NotImplementedException();
         }
@@ -125,25 +129,30 @@ namespace CSCore.CoreAudioAPI
         }
 
         [CSCalli]
-        internal static unsafe int CallI(void* _basePtr, Guid iid, uint context, IntPtr activationParams, IntPtr intPtr, void* p)
+        internal static unsafe int CallI(void* _basePtr, Guid iid, uint context, IntPtr activationParams, IntPtr intPtr,
+            void* p)
         {
             throw new NotImplementedException();
         }
 
         [CSCalli]
-        internal static unsafe int CallI(void* _basePtr, IntPtr intPtr1, uint context, IntPtr activationParams, IntPtr intPtr2, void* p)
+        internal static unsafe int CallI(void* _basePtr, IntPtr intPtr1, uint context, IntPtr activationParams,
+            IntPtr intPtr2, void* p)
         {
             throw new NotImplementedException();
         }
 
         [CSCalli]
-        internal static unsafe int CallI(void* _basePtr, void* p1, uint context, IntPtr activationParams, IntPtr intPtr, void* p2)
+        internal static unsafe int CallI(void* _basePtr, void* p1, uint context, IntPtr activationParams, IntPtr intPtr,
+            void* p2)
         {
             throw new NotImplementedException();
         }
 
         [CSCalli]
-        internal static unsafe int CallI(void* _basePtr, AudioClientShareMode shareMode, AudioClientStreamFlags streamFlags, long hnsBufferDuration, long hnsPeriodicity, void* p1, void* psession, void* p2)
+        internal static unsafe int CallI(void* _basePtr, AudioClientShareMode shareMode,
+            AudioClientStreamFlags streamFlags, long hnsBufferDuration, long hnsPeriodicity, void* p1, void* psession,
+            void* p2)
         {
             throw new NotImplementedException();
         }
@@ -221,7 +230,20 @@ namespace CSCore.CoreAudioAPI
         }
 
         [CSCalli]
-        internal static unsafe int CallI(void* _basePtr, Guid* guid, NativeBool crossProcessSession, IntPtr* intPtr, void* p)
+        internal static unsafe int CallI(void* _basePtr, Guid* guid, NativeBool crossProcessSession, IntPtr* intPtr,
+            void* p)
+        {
+            throw new NotImplementedException();
+        }
+
+        [CSCalli]
+        public static unsafe int CallI(void* unsafeBasePtr, int deviceIndex, void* pdevice)
+        {
+            throw new NotImplementedException();
+        }
+
+        [CSCalli]
+        internal static unsafe int CallI(void* UnsafeBasePtr, int channel, float levelDB, Guid* guid, void* p)
         {
             throw new NotImplementedException();
         }
@@ -239,4 +261,5 @@ namespace CSCore.CoreAudioAPI
         }
     }
 }
+
 #pragma warning restore 1591
