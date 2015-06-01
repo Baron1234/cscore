@@ -246,18 +246,6 @@ namespace CSCore.CoreAudioAPI
         {
             throw new NotImplementedException();
         }
-
-        [CSCalli]
-        public static unsafe int CallI(void* unsafeBasePtr, int deviceIndex, void* pdevice)
-        {
-            throw new NotImplementedException();
-        }
-
-        [CSCalli]
-        internal static unsafe int CallI(void* UnsafeBasePtr, int channel, float levelDB, Guid* guid, void* p)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
 
